@@ -112,10 +112,10 @@ svitch.addEventListener("click", () => {
     isActive = !isActive;
 
     if (isActive) {
-        basic.price -= 1000;
+        basic.powerReserve -= 20;
         svitch.classList.add("active");
     } else {
-        basic.price += 1000;
+        basic.powerReserve += 20;
         svitch.classList.remove("active");
     }
     reload()
